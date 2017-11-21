@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,300,300italic,500,500italic,700,700italic);
+
+body {
+  font-family: 'Ubuntu';
+  font-weight: lighter;
+}
+
+h1, h2, h3 {
+  font-family: 'Ubuntu';
+  font-weight: medium;
+}
+
+.inverse {
+  background: #272822;
+  color: #777872;
+  text-shadow: 0 0 20px #333;
+}
+
+.inverse h1, .inverse h2 {
+  color: #f3f3f3;
+  line-height: 1em;
+}
+
+#slide-inverse .footnote {
+  bottom: 12px;
+  left: 20px;
+}
+
+.remark-slide-content h1 {
+  font-size: 2em;
+}
+
+.remark-slide-content h2 {
+  font-size: 1.5em;
+}
+
+.remark-slide-content h3 {
+  font-size: 1.25em;
+}
+
+.footnote {
+  bottom: 3em;
+}
+
+li p {
+  line-height: 1.25em;
+}
+
+.red {
+  color: #fa0000;
+}
+
+.large {
+  font-size: 2em;
+}
+
+a, a > code {
+  color: #0069a7;
+  text-decoration: none;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono';
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.remark-slide-number {
+  opacity: 0;
+}
+
+.ssmall {
+  font-size: .8em;
+}
+
+.nolink a {
+  text-decoration: none;
+}
+
+.centre {
+  text-align: center;
+}
+
+.img-centre {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.git {
+  margin: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
