@@ -80,7 +80,7 @@
 
     ---
     layout: false
-    ## Title
+    ## Slack en quelques mots
     <hr /><br />
 
     * Texte...
@@ -99,7 +99,7 @@
 
     ---
     layout: false
-    ## Présentation de Git
+    ## Git en quelques mots
     <hr /><br />
 
 
@@ -118,7 +118,6 @@
     $ mkdir monprojet/                   # Création d'un nouveau dossier
     $ cd monprojet/                      # Déplacement dans ce dossier
     $ git init                           # Initialisation d'un versioning
-    $ ls -alH
     ```
 
     ---
@@ -138,213 +137,225 @@
 
     ---
     layout: false
-    ## Title
+    ## Poursuite du développement
     <hr />
+
     <img class="git" src="img/git-02.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git status                         # Statut des fichiers modifiés
+    $ git add --all                      # Ajout des modifications à l'historique
+    $ git commit -m "Mon 2nd commit"     # Engagement des modifs + Commentaire
+    $ git log --oneline                  # Affichage de l'historique
     ```
 
     ---
     layout: false
-    ## Title
+    ## Notion de branches
     <hr />
+
     <img class="git" src="img/git-03.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git branch                         # Affichage des branches
+    # * master
     ```
 
     ---
     layout: false
-    ## Title
+    ## Retour en arrière (1)
     <hr />
+
     <img class="git" src="img/git-04.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git log --oneline                  # Affichage de l'historique
+    # 802c024 Mon 2nd commit
+    # 2dea58d Mon 1er commit
+    $ git checkout 2dea58d readme.md     # Retour en arrière
+    $ git commit -m "Etat initial"       # Engagement des modifications
     ```
 
     ---
     layout: false
-    ## Title
+    ## Retour en arrière (2)
     <hr />
+
     <img class="git" src="img/git-05.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git log --oneline                  # Affichage de l'historique
+    # 6acd22h Etat initial
+    # 802c024 Mon 2nd commit
+    # 2dea58d Mon 1er commit
     ```
 
     ---
     layout: false
-    ## Title
+    ## Poursuite du développement
     <hr />
+
     <img class="git" src="img/git-06.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git status                         # Statut des fichiers modifiés
+    $ git add --all                      # Ajout des modifications à l'historique
+    $ git commit -m "Mon 3ème commit"    # Engagement des modifs + Commentaire
     ```
+
 
     ---
     layout: false
-    ## Title
+    ## Création d'une branche
     <hr />
-    <img class="git" src="img/git-07.png"></img>
-    <br /><br />
 
-    ```bash
-    $
-    ```
-
-    ---
-    layout: false
-    ## Title
-    <hr />
-    <img class="git" src="img/git-08.png"></img>
-    <br /><br />
-
-    ```bash
-    $
-    ```
-
-    ---
-    layout: false
-    ## Title
-    <hr />
-    <img class="git" src="img/git-09.png"></img>
-    <br /><br />
-
-    ```bash
-    $
-    ```
-
-    ---
-    layout: false
-    ## Title
-    <hr />
     <img class="git" src="img/git-10.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git branch exploration-1           # Création d'une nouvelle branche
+    $ git branch                         # Affichage des branches
+    #   exploration-1
+    # * master
     ```
 
     ---
     layout: false
-    ## Title
+    ## Déplacement dans une branche
     <hr />
+
+    <img class="git" src="img/git-10.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git checkout exploration-1         # Déplacement dans une branche
+    $ git branch                         # Affichage des branches
+    # * exploration-1
+    #   master
+    ```
+
+    ---
+    layout: false
+    ## Poursuite du développement (branche parallèle)
+    <hr />
+
     <img class="git" src="img/git-11.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git status                         # Statut des fichiers modifiés
+    $ git add --all                      # Ajout des modifications à l'historique
+    $ git commit -m "Mon nouveau commit" # Engagement des modifs + Commentaire
     ```
 
     ---
     layout: false
-    ## Title
+    ## Suppression d'une branche _non mergée_ (1)
     <hr />
+
     <img class="git" src="img/git-12.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git checkout master                # Déplacement dans la branche master
+    $ git branch                         # Affichage des branches
+    #   exploration-1
+    # * master
     ```
 
     ---
     layout: false
-    ## Title
+    ## Suppression d'une branche _non mergée_ (2)
     <hr />
+
     <img class="git" src="img/git-13.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git branch -D exploration-1        # Suppression d'une branche «non mergée»
+    $ git branch                         # Affichage des branches
+    # * master
     ```
 
     ---
     layout: false
-    ## Title
+    ## Travail dans une nouvelle branche
     <hr />
-    <img class="git" src="img/git-14.png"></img>
-    <br /><br />
 
-    ```bash
-    $
-    ```
-
-    ---
-    layout: false
-    ## Title
-    <hr />
-    <img class="git" src="img/git-15.png"></img>
-    <br /><br />
-
-    ```bash
-    $
-    ```
-
-    ---
-    layout: false
-    ## Title
-    <hr />
     <img class="git" src="img/git-16.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git branch exploration-2           # Création d'une nouvelle branche
+    $ git checkout exploration-2         # Déplacement dans la nouvelle branche
+    $ git add --all                      # Ajout des modifications à l'historique
+    $ git commit -m "Nouveau commit"     # Engagement des modifs + Commentaire
     ```
 
     ---
     layout: false
-    ## Title
+    ## Fusion de branches (1)
     <hr />
+
     <img class="git" src="img/git-17.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git checkout master                # Déplacement dans la branche master
+    $ git merge exploration-2            # Fusion de deux branches
+    # $ git commit -m "Solve conflicts"  # Engagement si conflits détectés
+
     ```
 
     ---
     layout: false
-    ## Title
+    ## Fusion de branches (2)
     <hr />
+
     <img class="git" src="img/git-18.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git branch                         # Affichage des branches
+    #   exploration-2
+    # * master
     ```
 
     ---
     layout: false
-    ## Title
+    ## Suppression d'une branche _mergée_
     <hr />
+
     <img class="git" src="img/git-19.png"></img>
     <br /><br />
 
     ```bash
-    $
+    $ git branch -d exploration-2        # Suppression d'une branche «mergée»
+    $ git branch                         # Affichage des branches
+    # * master
     ```
+
 
     ---
     layout: false
-    ## Title
-    <hr /><br />
+    ## Un projet un peu plus complexe
+    <hr />
 
-    <img class="git" src="img/git-00.png"></img>
+    <img class="git" src="img/git-20.png"></img>
     <br /><br />
 
-    ```bash
-    $
-    ```
+    --
+
+    * Et encore plus complexe
+
+    * [Évolution des distributions GNU/Linux](https://i.stack.imgur.com/W9itl.jpg)
+
+    * [Évolution des distributions GNU/Linux (version simplifiée)](http://1.bp.blogspot.com/_JBHfzEovWs8/S7TpfQGdIqI/AAAAAAAAAMw/Ht817f5-mlk/s1600/linux+distro+timeline.jpg)
 
 
 
