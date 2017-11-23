@@ -84,7 +84,18 @@
     ## Slack en quelques mots
     <hr /><br />
 
-    * Texte...
+    * Site officiel : [https://slack.com/](https://slack.com/)
+
+    * _Searchable Log of All Conversation and Knowledge_
+
+    * D'après le post d'Adam Lang : [_Why is Slack Called Slack?_](http://www.rewindandcapture.com/why-is-slack-called-slack/)
+
+
+    <div class="citation">
+
+    Slack, in project management, refers to the amount of time a delay could take from a task without causing subsequent problems. So if your current assignment is held up because you’re waiting on someone to get back to you, but you have a month to finish, you could say, “I have at least a few weeks of slack, so waiting another day won’t be a major problem.” It implies flexibility in the project schedule, a positive.
+
+    </div>
 
 
 
@@ -140,7 +151,7 @@
 
     ---
     layout: false
-    ## Démarrage d'un projet Git
+    ## Démarrage d'un projet git
     <hr />
 
     <img class="git" src="img/git-00.png"></img>
@@ -392,10 +403,8 @@
 
     ---
     layout: false
-    ## C'est bien beau tout ça, mais comment je collabore ?
+    ## C'est bien beau, mais comment je collabore ?
     <hr /><br />
-
-    --
 
     * Forges logicielles
 
@@ -424,6 +433,28 @@
     <img src="img/logo-github-2.png" style="width:750px;"></img>
 
 
+    ---
+    layout: false
+    ## GitHub en quelques mots
+    <hr /><br />
+
+    * Site officiel : [https://github.com](https://github.com)
+
+    * Service de gestion de développement de logiciels
+
+    * Service web d'hébergement (`gh-pages`)
+
+    * Compte gratuit (pour logiciels libres et publics)
+
+    * Réseau social
+
+    * Autres services
+
+      * Suivi de bugs
+
+      * Demandes de nouvelles fonctionnalités
+
+      * Wiki
 
     ---
     layout: false
@@ -433,6 +464,219 @@
     <img src="img/github-network.jpg" style="margin: 0 10%; width: 80%"></img>
 
 
+    ---
+    layout: false
+    ## Configuration de GitHub
+    <hr />
+
+    <img class="git" src="img/hub-01.png"></img>
+    <br /><br />
+
+    * Création d'un compte
+
+    * Création d'un dépôt public
+
+
+    ---
+    layout: false
+    ## Configuration de la connexion distante
+    <hr />
+
+    <img class="git" src="img/hub-02.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git remote add origin depot_url    # Ajout de la connexion distante
+    $ git remote                         # Affichage des connexions distantes
+    # origin
+    ```
+
+    ---
+    layout: false
+    ## Transfert du projet git sur GitHub
+    <hr />
+
+    <img class="git" src="img/hub-03.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git push origin master             # Transfert sur le dépôt distant
+    ```
+
+
+    ---
+    layout: false
+    ## Développement en local
+    <hr />
+
+    <img class="git" src="img/hub-04.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git add --all                      # Ajout des modifs à l'historique local
+    $ git commit -m "Nouveau commit"     # Engagement des modifs + Commentaire
+    ```
+
+    ---
+    layout: false
+    ## Mise à jour du dépôt GitHub
+    <hr />
+
+    <img class="git" src="img/hub-05.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git push origin master             # Mise à jour du dépôt distant
+    ```
+
+    ---
+    layout: false
+    ## Ajout d'un nouvel utilisateur
+    <hr />
+
+    <img class="git" src="img/hub-06.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git clone depot_url                # Copie du projet git (par collaborateur)
+    # alternative,
+    $ git remote add origin depot_url    # Ajout de la connexion distante
+    $ git pull origin master             # Téléchargement du projet git
+    ```
+
+    ---
+    layout: false
+    ## Développement en local
+    <hr />
+
+    <img class="git" src="img/hub-07.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git add --all                      # Ajout des modifs à l'historique local
+    $ git commit -m "Nouveau commit"     # Engagement des modifs + Commentaire
+    ```
+
+
+    ---
+    layout: false
+    ## Mise à jour du dépôt GitHub
+    <hr />
+
+    <img class="git" src="img/hub-08.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git push origin master             # Mise à jour du dépôt distant
+    ```
+
+    ---
+    layout: false
+    ## Mise à jour du projet en local
+    <hr />
+
+    <img class="git" src="img/hub-09.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git pull origin master             # Mise à jour du dépôt local
+    ```
+
+    ---
+    layout: false
+    ## Développement parallèle en local
+    <hr />
+
+    <img class="git" src="img/hub-10.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git add --all                      # Ajout des modifs aux historiques locaux
+    $ git commit -m "Nouveau commit"     # Engagement des modifs + Commentaire
+    ```
+
+    ---
+    layout: false
+    ## Mise à jour du dépôt distant
+    <hr />
+
+    <img class="git" src="img/hub-11.png"></img>
+    <br /><br />
+
+    ```bash
+    # $ git pull origin master           # Mise à jour du dépôt local (si erreur)
+    $ git push origin master             # Mise à jour du dépôt distant
+    ```
+
+
+    ---
+    layout: false
+    ## Mise à jour du dépôt distant
+    <hr />
+
+    <img class="git" src="img/hub-12.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git pull origin master             # Mise à jour du dépôt local
+    # $ git commit -m "Solve conflicts"  # Si présence de conflits
+    ```
+
+    ---
+    layout: false
+    ## Mise à jour du dépôt distant
+    <hr />
+
+    <img class="git" src="img/hub-13.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git push origin master             # Mise à jour du dépôt distant
+    ```
+
+
+    ---
+    layout: false
+    ## Mise à jour du projet en local
+    <hr />
+
+    <img class="git" src="img/hub-14.png"></img>
+    <br /><br />
+
+    ```bash
+    $ git pull origin master             # Mise à jour du dépôt local
+    ```
+
+    ---
+    layout: false
+    ## Recommendations
+    <hr /><br />
+
+    * Tout collaborateur devrait créer sa propre branche
+
+    * Seul le leader du projet devrait accepter/refuser les fonctionnalités proposées par le(s) collaborateur(s) - `pull request`
+
+
+    ---
+    layout: false
+    ## Bonus : Déploiement d'un site Web
+    <hr /><br />
+
+    * Une fois le projet Web terminé, on peut le déployer sur GitHub
+
+    <br />
+
+    ```bash
+    $ git branch gh-pages                # Création d'une branche gh-pages
+    $ git checkout gh-pages              # Sélection de cette branche
+    $ git push origin gh-pages           # Déploiement sur GitHub
+    ```
+
+    <br />
+
+    --
+
+    > Ok, on arrête là!
 
     ---
     name: inverse
